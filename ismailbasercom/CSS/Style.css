@@ -1,0 +1,95 @@
+
+@import url(../CSS/fonts.css);
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+:root{
+    /*  Theme Colors    */
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnightGreen:#004611b4;
+
+    /*  Gradient Color  */
+    
+    --sky: linear-gradient(79deg, rgba(1,0,0,1) 0%, rgba(2,133,15,1) 23%, rgba(106,63,11,1) 63%, rgba(255,201,36,1) 100%);   
+
+
+
+
+    /*  Theme font-family   */
+    --Abel:'Abel';
+    --Anton:'Anton';
+    --Josefin:'Josefin';
+    --Lexend:'Lexend';
+    --Livlic:'Livlic';   
+}
+
+/*----------------  Global Classes  ----------------*/
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--text-gray);
+}
+
+ul{
+    list-style-type: none;    
+}
+/*--------X-------  Global Classes  --------X-------*/
+
+/*----------------  navbar  ----------------*/
+
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 40vh;
+    overflow: hidden;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;     
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;    
+}
+
+.nav .nav-items .nav-link{
+    font-size: 1.3rem;
+    padding: 1.6rem 1rem;    
+    position: relative;
+    font-family: var(--Abel);
+
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnightGreen);
+}
+
+
+.nav .nav-brand a{
+    font-size: 2.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+    font-size: 2.1rem;
+    
+}
+/*----------------  navbar  ----------------*/
