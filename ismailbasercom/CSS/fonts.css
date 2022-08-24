@@ -28,3 +28,9 @@
     font-family: Livlic;
     src: url('../fonts/Livvic/Livvic-Regular.ttf');
 }
+
+/* font-family: Livlic BOLD*/
+@font-face {
+    font-family: LivlicBold;
+    src: url('../fonts/Livvic/Livvic-Bold.ttf');
+}
