@@ -182,10 +182,13 @@ main .site-title .btn{
 }
 
 main .site-title .btn:hover{
-    background: transparent;
+    
     border: 1px solid var(--white);
     color: #ffffff;
-
+    background: var(--sky);
+    background-size: 400% 400%;
+	-webkit-animation: gradient 5s ease infinite;
+	        animation: gradient 5s ease infinite;
 }
 /*-----x-----  Site Title  -----x-----*/
 
@@ -205,5 +208,16 @@ main .site-title .btn:hover{
     
 }
 
-
 /*      X       Viewport less then or equal to 750px        X       */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
